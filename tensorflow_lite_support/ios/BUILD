@@ -56,7 +56,6 @@ strip_api_include_path_prefix(
         "//tensorflow_lite_support/ios/task/processor:sources/TFLClassificationResult.h",
         "//tensorflow_lite_support/ios/task/processor:sources/TFLDetectionResult.h",
         "//tensorflow_lite_support/ios/task/processor:sources/TFLSegmentationResult.h",
-        "//tensorflow_lite_support/odml/ios/image:apis/GMLImage.h",
         "//tensorflow_lite_support/ios/task/processor:sources/TFLSearchResult.h",
         "//tensorflow_lite_support/ios/task/audio/core:sources/TFLAudioFormat.h",
         "//tensorflow_lite_support/ios/task/audio/core:sources/TFLFloatBuffer.h",
@@ -177,7 +176,6 @@ objc_library(
 ios_static_framework(
     name = "TensorFlowLiteTaskVision_framework",
     hdrs = [
-        ":GMLImage.h",
         ":TFLBaseOptions.h",
         ":TFLCategory.h",
         ":TFLClassificationOptions.h",
